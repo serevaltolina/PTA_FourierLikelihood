@@ -163,7 +163,7 @@ def update_cov(Cs,ms,ns,npsrs):
 ##### FOURIER LIKELIHOOD
 #--------------------------------------------------------------------------------
 
-def log_likelihood_Fourier_debug(xs):
+def log_likelihood_Fourier(xs):
 
     '''
         New Fourier likelihood for pta array
@@ -412,14 +412,14 @@ np.savetxt(mcmc_dir+'/params.txt', pta_fl.param_names, fmt='%s')
 
 # sampling
 xs = {par.name: par.sample() for par in pta_fl.params}
-print('test ln_likelihood: ',log_likelihood_Fourier_debug(xs),'\n')
+print('test ln_likelihood: ',log_likelihood_Fourier(xs),'\n')
 
 ndim = len(xs)
 cov = np.diag(np.ones(ndim) * 0.01**2)
 groups = None
 Num = 2e6
 
-sampler = ptmcmc(ndim, log_likelihood_Fourier_debug, pta_fl.get_lnprior, cov, groups=groups, outDir=mcmc_dir, resume=False, seed=1234)
+sampler = ptmcmc(ndim, log_likelihood_Fourier, pta_fl.get_lnprior, cov, groups=groups, outDir=mcmc_dir, resume=False, seed=1234)
 for p in psrs:
     temp = jump_prior_rn(p,pta_fl)
     sampler.addProposalToCycle(temp, 5)
