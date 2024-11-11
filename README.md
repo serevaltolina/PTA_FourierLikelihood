@@ -6,19 +6,19 @@ In this repository we stored all the main scripts used for the project described
 
 where we introduce a PTA likelihood in Fourier space. This new formulation allows to divide a GWB search in a two-steps analysis, where all the signals not covaraint with a GWB are evaluated separately for each pulsar and then marginalized over when analysing the whole array. This likelihood formulation can also be used for a GWB search on a Gamma-ray PTA dataset.
 
-If you make use of any of these scripts/data, please cite:
+If you make use of any of these scripts, please cite:
 ```
 ADD
 ```
 
 ## Repository content details
 
-- **FourierCoeff_reconstruct.ipynb**
-- **SPNA_example.ipynb**
-- **GWBsearch_FourierLikelihood_tutorial.ipynb**
-- **GWB_FourierLikelihood.py**
-- **PCA_analysis.ipynb**
-- **sere_enterprise.py**
+- **FourierCoeff_reconstruct.ipynb** : tutorial about how to obtain the best estimate for the Fourier coefficients describing red noise and DM variations using the python package *la_forge*.
+- **SPNA_example.ipynb** : example of single pulsar noise analysis for the EPTA pulsar J1738+0333 with the Fourier likelihood (Fig. 1 of our paper).
+- **GWBsearch_FourierLikelihood_tutorial.ipynb** : tutorial about how to use the Fourier likelihood for a GWB search on a PTA dataset.
+- **GWB_FourierLikelihood.py** : code for a GWB search on a PTA dataset with the Fourier likelihood (Fig. 2 of our paper).
+- **PCA_analysis.ipynb** : tutorial related to Appendix B of our paper: possible strategy to marginlaize over DM variation hyperparameters when doing a PTA analysis with a PCA approach.
+- **sere_enterprise.py** : slightly modified version of some enterprise extension function. 
 
 ## Before running
 
