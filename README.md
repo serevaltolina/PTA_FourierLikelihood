@@ -25,7 +25,7 @@ If you make use of any of these scripts, please cite:
 - **SPNA_example.ipynb** : example of single pulsar noise analysis for the EPTA pulsar J1738+0333 with the Fourier likelihood (Fig. 1 of our paper).
 - **GWBsearch_FourierLikelihood_tutorial.ipynb** : tutorial about how to use the Fourier likelihood for a GWB search on a PTA dataset.
 - **GWB_FourierLikelihood.py** : code for a GWB search on a PTA dataset with the Fourier likelihood (Fig. 2 of our paper).
-- **PCA_analysis.ipynb** : tutorial related to Appendix B of our paper: possible strategy to marginlaize over DM variation hyperparameters when doing a PTA analysis with a PCA approach.
+- **PCA_analysis.ipynb** : tutorial related to Appendix C of our paper: possible strategy to marginlaize over DM variation hyperparameters when doing a PTA analysis with a PCA approach.
 - **sere_enterprise.py** : slightly modified version of some enterprise extension function. 
 
 ## Before running
