@@ -2,13 +2,21 @@
 
 In this repository we stored all the main scripts used for the project described in the paper:
 
-["Moving towards a pulsar timing array likelihood in Fourier space"](??).
+["Moving towards a pulsar timing array likelihood in Fourier space"](https://arxiv.org/abs/2412.11894).
 
 where we introduce a PTA likelihood in Fourier space. This new formulation allows to divide a GWB search in a two-steps analysis, where all the signals not covaraint with a GWB are evaluated separately for each pulsar and then marginalized over when analysing the whole array. This likelihood formulation can also be used for a GWB search on a Gamma-ray PTA dataset.
 
 If you make use of any of these scripts, please cite:
 ```
-ADD
+@misc{valtolina2024regularizingpulsartimingarray,
+      title={Regularizing the Pulsar Timing Array likelihood: A path towards Fourier Space}, 
+      author={Serena Valtolina and Rutger van Haasteren},
+      year={2024},
+      eprint={2412.11894},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.IM},
+      url={https://arxiv.org/abs/2412.11894}, 
+}
 ```
 
 ## Repository content details
